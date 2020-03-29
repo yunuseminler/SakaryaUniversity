@@ -1,0 +1,6 @@
+C:\Users\Yunus Emre\Desktop\g191210046\g191210046\bin\Debug\g191210046.exe.config
+C:\Users\Yunus Emre\Desktop\g191210046\g191210046\bin\Debug\g191210046.exe
+C:\Users\Yunus Emre\Desktop\g191210046\g191210046\bin\Debug\g191210046.pdb
+C:\Users\Yunus Emre\Desktop\g191210046\g191210046\obj\Debug\g191210046.csprojAssemblyReference.cache
+C:\Users\Yunus Emre\Desktop\g191210046\g191210046\obj\Debug\g191210046.exe
+C:\Users\Yunus Emre\Desktop\g191210046\g191210046\obj\Debug\g191210046.pdb

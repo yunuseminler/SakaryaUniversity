@@ -1,0 +1,9 @@
+AA Harf notuna sahip 1 Ogrenci var. Sınıfın 12%'u AA Harf notuna sahip.
+BA Harf notuna sahip 0 Ogrenci var. Sınıfın 0%'u BA Harf notuna sahip.
+BB Harf notuna sahip 1 Ogrenci var. Sınıfın 12%'u BB Harf notuna sahip.
+CB Harf notuna sahip 2 Ogrenci var. Sınıfın 25%'u CB Harf notuna sahip.
+CC Harf notuna sahip 1 Ogrenci var. Sınıfın 12%'u CC Harf notuna sahip.
+DC Harf notuna sahip 1 Ogrenci var. Sınıfın 12%'u DC Harf notuna sahip.
+DD Harf notuna sahip 0 Ogrenci var. Sınıfın 0%'u DD Harf notuna sahip.
+FD Harf notuna sahip 1 Ogrenci var. Sınıfın 12%'u FD Harf notuna sahip.
+FF Harf notuna sahip 1 Ogrenci var. Sınıfın 12%'u FF Harf notuna sahip.
