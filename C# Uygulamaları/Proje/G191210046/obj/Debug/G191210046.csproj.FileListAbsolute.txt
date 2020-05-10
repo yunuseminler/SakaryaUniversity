@@ -1,0 +1,9 @@
+C:\Users\Yunus Emre\source\repos\g191210046\G191210046\bin\Debug\G191210046.exe.config
+C:\Users\Yunus Emre\source\repos\g191210046\G191210046\bin\Debug\G191210046.exe
+C:\Users\Yunus Emre\source\repos\g191210046\G191210046\bin\Debug\G191210046.pdb
+C:\Users\Yunus Emre\source\repos\g191210046\G191210046\obj\Debug\G191210046.csprojAssemblyReference.cache
+C:\Users\Yunus Emre\source\repos\g191210046\G191210046\obj\Debug\G191210046.Form1.resources
+C:\Users\Yunus Emre\source\repos\g191210046\G191210046\obj\Debug\G191210046.Properties.Resources.resources
+C:\Users\Yunus Emre\source\repos\g191210046\G191210046\obj\Debug\G191210046.csproj.GenerateResource.cache
+C:\Users\Yunus Emre\source\repos\g191210046\G191210046\obj\Debug\G191210046.exe
+C:\Users\Yunus Emre\source\repos\g191210046\G191210046\obj\Debug\G191210046.pdb
