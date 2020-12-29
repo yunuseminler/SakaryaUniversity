@@ -55,9 +55,10 @@ namespace Proje1
         private void button2_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            string sorgu = "SELECT * FROM sonlandir('" + label8.Text + "','" + kasa.Text + "','" +magaza.Text+"')";
-            NpgsqlCommand bitir = new NpgsqlCommand(sorgu, baglanti);
-            
+            NpgsqlCommand bitir = new NpgsqlCommand("SELECT * FROM \"sonlandir\"('2020-12-29',@p2,@p3)", baglanti);
+            bitir.Parameters.AddWithValue("@p2", kasa.Text); 
+            bitir.Parameters.AddWithValue("@p3", magaza.Text);
+            bitir.ExecuteNonQuery();
             baglanti.Close();
         }
 
