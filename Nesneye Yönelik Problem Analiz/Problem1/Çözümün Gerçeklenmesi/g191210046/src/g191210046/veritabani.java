@@ -6,27 +6,27 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class veritabani {
+public class veritabani {//Program ile veritabani arasindaki bağlantiyi kuran ve kontrol eden class tanimlamasi.
 	String url = "jdbc:postgresql://localhost:5432/girisBilgileri";
 	Connection conn = null;
 	
-	public void baglan(){
+	public void baglan(){//Veritabani ile program arasindaki ilk bağlantiyi gerceklestiren fonskiyon.
 		try {
 			conn = DriverManager.getConnection(url,"postgres","1140");
 		} catch (SQLException e) {
-			System.out.println("Bağlantı başarısız");
+			System.out.println("Bağlanti basarisiz");
 		}
 	}
 	
-	public void baglantiyiKes() {
+	public void baglantiyiKes() {//Veritabani ile program arasindaki bağlantiyi sonlandiran fonskiyon.
 		try {
 			conn.close();
 		} catch (SQLException e) {
-			System.out.println("Bağlantı kesilmedi");
+			System.out.println("Bağlanti kesilmedi");
 		}
 	}
 	
-	public boolean kontrolEt(String deger,String sutun){
+	public boolean kontrolEt(String deger,String sutun){//Gonderilen değeri veri tabaninda arayan fonksiyon. Var ise true yok ise false donduruyor.
 		try {
 			String sorgu = "SELECT * FROM \"Kullanici\" WHERE \""+ sutun +"\" = '"+ deger +"'";
 			Statement st = conn.createStatement();
