@@ -199,6 +199,3 @@ client.on("message",message=>{
     });
 })
 
-
-
-client.login("Nzg3NjY0MTk5MjI0MzkzNzQ4.X9YPcw.bSxTNS91USPSmw0QtkYeiyW2DQg");
