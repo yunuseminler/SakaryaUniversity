@@ -8,16 +8,15 @@ public class Game {
 	int sutun;
 	int inputSatir; 
 	int inputSutun;
-	int[] mayin;
+	int mayinSayisi;
+	int mayinlar[][];
 	
 	public Game(int satir,int sutun) {
 		this.satir = satir;
 		this.sutun = sutun;
-		game = new String[this.satir][this.sutun];
-		mayin = new int[((satir*sutun)/4)*2];
-		for(int i = 0;i<mayin.length;i++) {
-			mayin[i] = -1;
-		}
+		this.game = new String[this.satir][this.sutun];
+		this.mayinSayisi =((satir*sutun)/4);
+		this.mayinlar = new int [this.mayinSayisi][2]; 
 		mayinKoy();
 		
 	}
@@ -26,6 +25,7 @@ public class Game {
 		while(true) {
 			ekranaYaz();
 			input();
+			
 			if(kontrol(inputSatir,inputSutun)){
 				System.out.println("Oyun bitti kaybettiniz.");
 				break;
@@ -35,24 +35,54 @@ public class Game {
 	}
 	public void mayinKoy() {
 		Random r = new Random();
-		for(int i = 0;i<mayin.length;i+=2) {
-			
+		for(int i = 0;i<this.mayinSayisi;i++) {
+				int temp = 0;
+				int temp1 = 0;
+				Boolean a = false;
+				while(a==false) {
+				temp = r.nextInt(this.satir);
+				temp1 = r.nextInt(this.sutun);
+				if(i==0) {
+					a = true;
+				}
+				for(int j = 0;j<i;j++) {
+					if(!(this.mayinlar[j][0] == temp)) {
+						if(!(this.mayinlar[j][1]==temp1)) {
+							a = true;
+						}
+					}
+				}
+				if(a==true) {
+					break;
+				}
+					
+				}
+				this.mayinlar[i][0] = temp;
+				this.mayinlar[i][1] = temp1;
 		}
 		
 	}
-	
+	public Boolean kontrolMayin(int sa,int su) {
+		return false;
+	}
 	public void input() {
+	
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Satir giriniz: ");
-		inputSatir = scan.nextInt();
+		this.inputSatir = scan.nextInt();
 		System.out.print("Sutun giriniz: ");
-		inputSutun  = scan.nextInt();
+		this.inputSutun  = scan.nextInt();
 		scan.close();
 	}
 	public Boolean kontrol(int sa,int su) {
-		if(game[sa-1][su-1].equals("e")) {
-			
+		for(int i = 0;i<this.mayinSayisi;i++) {
+			if(this.mayinlar[i][0]==sa) {
+				if(this.mayinlar[i][1]==su) {
+					return true;
+				}
+			}
 		}
+		
 		return false;
 	}
 	
