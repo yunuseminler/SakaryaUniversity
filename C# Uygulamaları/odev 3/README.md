@@ -1,1 +1,0 @@
-Basit Market uygulaması.

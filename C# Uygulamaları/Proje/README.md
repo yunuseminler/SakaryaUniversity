@@ -1,1 +1,0 @@
-Form Uygulamasında oyun yapılmıştır.

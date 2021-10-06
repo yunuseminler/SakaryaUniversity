@@ -1,1 +1,0 @@
-Dosyadan okunan değerleri okuyarak program içinde kullanır.

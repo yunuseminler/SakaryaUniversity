@@ -12,7 +12,6 @@ public class Main {
 		int sutunSayisi = scan.nextInt();
 		Game game = new Game(satirSayisi,sutunSayisi);
 		game.run();
-		scan.close();
 	}
 
 }

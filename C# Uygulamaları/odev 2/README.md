@@ -1,1 +1,0 @@
-2 sayının Arkadaş Sayı olup olmadığını bulan program

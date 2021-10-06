@@ -1,1 +1,0 @@
-Veritabanına sahip market uygulaması.
